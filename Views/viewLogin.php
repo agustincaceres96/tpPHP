@@ -1,29 +1,28 @@
+
+<?php namespace css; ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Style.css" />
 </head>
 <body>
-    <form action="/tp final/Login/Login" method="post">
-        <table border="1">
-            <tr>
-                <td colspan="2">LOGIN</td>
-            </tr>
-            <tr>
-                <td>Email:</td>
-                <td><input type="email" name="email" ></td>
-            </tr>
-            <tr>
-                <td>Password:</td>
-                <td><input type="password" name="password" ></td>
-            </tr>
-            <tr>
-                <td colspan="2"><input type="submit" name="btnCargar" value="Ingresar"></td>
-            </tr>
-        </table>
+    <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>GoTo<span>EVENT</span></div>
+		</div>
+		<br>
+		<form action="<?=BASE?>Login/Login" method="POST">
+		<div class="login">
+				<input type="text" placeholder="email" name="email"><br>
+				<input type="password" placeholder="password" name="password"><br>
+				<input type="submit" name="btnCargar" value="Ingresar">
+		</div>
     </form>
 </body>
+
 </html>

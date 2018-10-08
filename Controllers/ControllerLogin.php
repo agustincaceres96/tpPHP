@@ -15,7 +15,7 @@ class ControllerLogin
         echo "estas dentro de controladora Main: metodo login";
        echo $email;
         echo $password;
-        /*
+        
         
 
     session_start();
